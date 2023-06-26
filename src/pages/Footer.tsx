@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { Circle } from "../components/Circle";
 import { ImArrowUp } from "react-icons/im";

@@ -1,4 +1,3 @@
-import React from "react";
 import { Circle } from "../components/Circle";
 import { HiOutlinePhone } from "react-icons/hi";
 import styled from "styled-components";

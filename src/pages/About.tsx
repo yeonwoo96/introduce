@@ -1,4 +1,3 @@
-import { BsFill0CircleFill } from "react-icons/bs";
 import styled from "styled-components";
 
 const AboutContainer = styled.div`
