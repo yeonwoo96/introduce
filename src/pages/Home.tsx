@@ -95,7 +95,7 @@ const Main = styled.div`
     width: 350px;
     height: 350px;
     border: 1px solid #000;
-    background: url("../src/assets/images/me1.jpg");
+    background: url("./src/assets/images/me1.jpg");
     background-size: cover;
     background-position: 0 -100px;
     animation: ${wiggle} 5s infinite ease-in-out;
@@ -155,7 +155,7 @@ const Home = () => {
                 <span className="myworth nanum">밥 값</span> 하는 개발자
                 <br />
                 신연우 입니다&nbsp;
-                <img className="rice" src="../src/assets/images/rice.png"></img>
+                <img className="rice" src="./src/assets/images/rice.png"></img>
               </h1>
               <p className="hiiamyeonwoo">
                 안녕하세요. 부산에서 개발 공부하는 프론트 엔드 개발자 신연우라고
@@ -173,22 +173,22 @@ const Home = () => {
           <h4 className="Hilite">My Skills</h4>
           <div className="CircleContainer">
             <Circle>
-              <img alt="html" src="../src/assets/images/html.png" />
+              <img alt="html" src="./src/assets/images/html.png" />
             </Circle>
             <Circle>
-              <img alt="css" src="../src/assets/images/css.png" />
+              <img alt="css" src="./src/assets/images/css.png" />
             </Circle>
             <Circle>
-              <img alt="js" src="../src/assets/images/js.png" />
+              <img alt="js" src="./src/assets/images/js.png" />
             </Circle>
             <Circle>
-              <img alt="js" src="../src/assets/images/react.png" />
+              <img alt="js" src="./src/assets/images/react.png" />
             </Circle>
             <Circle>
-              <img alt="ts" src="../src/assets/images/ts.png" />
+              <img alt="ts" src="./src/assets/images/ts.png" />
             </Circle>
             <Circle>
-              <img alt="sass" src="../src/assets/images/sass.png" />
+              <img alt="sass" src="./src/assets/images/sass.png" />
             </Circle>
           </div>
         </Skills>
