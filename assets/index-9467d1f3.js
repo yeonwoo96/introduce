@@ -208,7 +208,7 @@ Error generating stack: `+i.message+`
     width: 350px;
     height: 350px;
     border: 1px solid #000;
-    background: url("src/assets/images/me1.jpg");
+    background: url("../src/assets/images/me1.jpg");
     background-size: cover;
     background-position: 0 -100px;
     animation: ${J0} 5s infinite ease-in-out;
@@ -254,7 +254,7 @@ Error generating stack: `+i.message+`
   img {
     width: 34px;
   }
-`,nm=()=>y.jsx(b0,{className:"container",children:y.jsxs("div",{children:[y.jsxs(em,{children:[y.jsx("div",{className:"textWrap",children:y.jsxs("div",{className:"text",children:[y.jsxs("h1",{children:[y.jsx("span",{className:"myworth nanum",children:"밥 값"})," 하는 개발자",y.jsx("br",{}),"신연우 입니다 ",y.jsx("img",{className:"rice",src:"src\\assets\\images\\rice.png"})]}),y.jsx("p",{className:"hiiamyeonwoo",children:"안녕하세요. 부산에서 개발 공부하는 프론트 엔드 개발자 신연우라고 합니다.👋"}),y.jsxs("span",{className:"blogs Hilite",children:[y.jsx(X0,{}),y.jsx(Z0,{})]})]})}),y.jsx("div",{className:"photo"})]}),y.jsxs(tm,{children:[y.jsx("h4",{className:"Hilite",children:"My Skills"}),y.jsxs("div",{className:"CircleContainer",children:[y.jsx(vn,{children:y.jsx("img",{alt:"html",src:"src\\assets\\images\\html.png"})}),y.jsx(vn,{children:y.jsx("img",{alt:"css",src:"src\\assets\\images\\css.png"})}),y.jsx(vn,{children:y.jsx("img",{alt:"js",src:"src\\assets\\images\\js.png"})}),y.jsx(vn,{children:y.jsx("img",{alt:"js",src:"src\\assets\\images\\react.png"})}),y.jsx(vn,{children:y.jsx("img",{alt:"ts",src:"src\\assets\\images\\ts.png"})}),y.jsx(vn,{children:y.jsx("img",{alt:"sass",src:"src\\assets\\images\\sass.png"})})]})]})]})}),rm=ge.div`
+`,nm=()=>y.jsx(b0,{className:"container",children:y.jsxs("div",{children:[y.jsxs(em,{children:[y.jsx("div",{className:"textWrap",children:y.jsxs("div",{className:"text",children:[y.jsxs("h1",{children:[y.jsx("span",{className:"myworth nanum",children:"밥 값"})," 하는 개발자",y.jsx("br",{}),"신연우 입니다 ",y.jsx("img",{className:"rice",src:"../src/assets/images/rice.png"})]}),y.jsx("p",{className:"hiiamyeonwoo",children:"안녕하세요. 부산에서 개발 공부하는 프론트 엔드 개발자 신연우라고 합니다.👋"}),y.jsxs("span",{className:"blogs Hilite",children:[y.jsx(X0,{}),y.jsx(Z0,{})]})]})}),y.jsx("div",{className:"photo"})]}),y.jsxs(tm,{children:[y.jsx("h4",{className:"Hilite",children:"My Skills"}),y.jsxs("div",{className:"CircleContainer",children:[y.jsx(vn,{children:y.jsx("img",{alt:"html",src:"../src/assets/images/html.png"})}),y.jsx(vn,{children:y.jsx("img",{alt:"css",src:"../src/assets/images/css.png"})}),y.jsx(vn,{children:y.jsx("img",{alt:"js",src:"../src/assets/images/js.png"})}),y.jsx(vn,{children:y.jsx("img",{alt:"js",src:"../src/assets/images/react.png"})}),y.jsx(vn,{children:y.jsx("img",{alt:"ts",src:"../src/assets/images/ts.png"})}),y.jsx(vn,{children:y.jsx("img",{alt:"sass",src:"../src/assets/images/sass.png"})})]})]})]})}),rm=ge.div`
   margin: 50px 0;
   box-sizing: border-box;
   width: 950px;
@@ -287,13 +287,11 @@ Error generating stack: `+i.message+`
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   overflow: hidden;
   position: relative;
-  img {
-    position: absolute;
-    width: 100%;
-    transition: transform 10s ease-in-out;
-    &:hover {
-      transform: translateY(-${e=>e.height}%);
-    }
+  background: url(${e=>e.bg}) top;
+  background-size: cover;
+  transition: background-position 10s ease-in-out;
+  &:hover {
+    background-position: bottom;
   }
 `,om=ge.button`
   border: none;
@@ -303,7 +301,7 @@ Error generating stack: `+i.message+`
   font-size: 1rem;
   font-weight: 500;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-`,um=({source:e})=>(console.log(e),y.jsx(y.Fragment,{children:e.map(t=>y.jsxs(rm,{children:[y.jsx(im,{style:{order:t.right?-1:0},height:t.height,children:y.jsx("img",{src:t.img})}),y.jsxs(lm,{className:"textbox",children:[y.jsx("h3",{children:t.h3}),y.jsx("p",{children:t.p}),y.jsx("div",{className:"skillbox",children:t.skill.map(n=>y.jsx(om,{children:n}))}),y.jsx("a",{href:t.github,children:"github"})]})]},t.h3))})),sm=ge.div`
+`,um=({source:e})=>(console.log(e),y.jsx(y.Fragment,{children:e.map(t=>y.jsxs(rm,{children:[y.jsx(im,{style:{order:t.right?-1:0},bg:t.img}),y.jsxs(lm,{className:"textbox",children:[y.jsx("h3",{children:t.h3}),y.jsx("p",{children:t.p}),y.jsx("div",{className:"skillbox",children:t.skill.map(n=>y.jsx(om,{children:n}))}),y.jsx("a",{href:t.github,children:"github"})]})]},t.h3))})),sm=ge.div`
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -316,7 +314,7 @@ Error generating stack: `+i.message+`
   h4 {
     margin-bottom: 1rem;
   }
-`,am=[{img:"src/assets/images/nikeclone.png",h3:"나이키 온라인 스토어 🏃‍♂️",p:"나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",skill:["React","TypeScript"],github:"string",right:!1,height:92},{img:"src/assets/images/ReactFakeShop.png",h3:"나이키 온라인 스토어 🏃‍♂️",p:"나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",skill:["React","TypeScript"],github:"string",right:!0,height:92},{img:"src/assets/images/nikeclone.png",h3:"나이키 온라인 스토어 🏃‍♂️",p:"나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",skill:["React","TypeScript"],github:"string",right:!1,height:92}],cm=()=>y.jsxs(sm,{children:[y.jsx("h4",{className:"Blue",children:"PORTFOLIO"}),y.jsx("h3",{children:"Each project is a unique piece of development 🧩"}),y.jsx(um,{source:am})]});function La(e){return Gn({tag:"svg",attr:{fill:"none",viewBox:"0 0 24 24",strokeWidth:"2",stroke:"currentColor","aria-hidden":"true"},child:[{tag:"path",attr:{strokeLinecap:"round",strokeLinejoin:"round",d:"M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"}}]})(e)}const fm=ge.div`
+`,am=[{img:"src/assets/images/nikeclone.png",h3:"나이키 온라인 스토어 🏃‍♂️",p:"나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",skill:["React","TypeScript"],github:"string",right:!1},{img:"src/assets/images/ReactFakeShop.png",h3:"나이키 온라인 스토어 🏃‍♂️",p:"나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",skill:["React","TypeScript"],github:"string",right:!0},{img:"src/assets/images/nikeclone.png",h3:"나이키 온라인 스토어 🏃‍♂️",p:"나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",skill:["React","TypeScript"],github:"string",right:!1}],cm=()=>y.jsxs(sm,{children:[y.jsx("h4",{className:"Blue",children:"PORTFOLIO"}),y.jsx("h3",{children:"Each project is a unique piece of development 🧩"}),y.jsx(um,{source:am})]});function La(e){return Gn({tag:"svg",attr:{fill:"none",viewBox:"0 0 24 24",strokeWidth:"2",stroke:"currentColor","aria-hidden":"true"},child:[{tag:"path",attr:{strokeLinecap:"round",strokeLinejoin:"round",d:"M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"}}]})(e)}const fm=ge.div`
   padding: 110px 0;
   width: 950px;
   display: flex;
