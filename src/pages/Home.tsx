@@ -158,8 +158,8 @@ const Home = () => {
                 <img className="rice" src="./src/assets/images/rice.png"></img>
               </h1>
               <p className="hiiamyeonwoo">
-                안녕하세요. 부산에서 개발 공부하는 프론트 엔드 개발자 신연우라고
-                합니다.👋
+                {/* 안녕하세요. 부산에서 개발 공부하는 프론트 엔드 개발자 신연우라고
+                합니다.👋 */}
               </p>
               <span className="blogs Hilite">
                 <SiGithub />
