@@ -24,7 +24,7 @@ const AboutWrap = styled.div`
   }
   .left {
     border-radius: 40px;
-    background: url("src/assets/images/me.jpg");
+    background: url("/src/assets/images/me.jpg");
     background-size: cover;
     background-position: 100%;
     min-width: 300px;

@@ -18,7 +18,7 @@ const ProjectsWrapper = styled.div`
 
 const NikeClone = [
   {
-    img: "src/assets/images/nikeclone.png",
+    img: "/src/assets/images/nikeclone.png",
     h3: "나이키 온라인 스토어 🏃‍♂️",
     p: "나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",
     skill: ["React", "TypeScript"],
@@ -26,7 +26,7 @@ const NikeClone = [
     right: false,
   },
   {
-    img: "src/assets/images/ReactFakeShop.png",
+    img: "/src/assets/images/ReactFakeShop.png",
     h3: "나이키 온라인 스토어 🏃‍♂️",
     p: "나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",
     skill: ["React", "TypeScript"],
@@ -34,7 +34,7 @@ const NikeClone = [
     right: true,
   },
   {
-    img: "src/assets/images/nikeclone.png",
+    img: "/src/assets/images/nikeclone.png",
     h3: "나이키 온라인 스토어 🏃‍♂️",
     p: "나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",
     skill: ["React", "TypeScript"],
