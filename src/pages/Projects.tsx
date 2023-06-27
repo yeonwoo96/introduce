@@ -24,7 +24,6 @@ const NikeClone = [
     skill: ["React", "TypeScript"],
     github: "string",
     right: false,
-    height: 92,
   },
   {
     img: "src/assets/images/ReactFakeShop.png",
@@ -33,7 +32,6 @@ const NikeClone = [
     skill: ["React", "TypeScript"],
     github: "string",
     right: true,
-    height: 92,
   },
   {
     img: "src/assets/images/nikeclone.png",
@@ -42,7 +40,6 @@ const NikeClone = [
     skill: ["React", "TypeScript"],
     github: "string",
     right: false,
-    height: 92,
   },
 ];
 const Projects = () => {

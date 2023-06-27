@@ -29,7 +29,7 @@ const MyworkWrap = styled.div`
 `;
 const Box = styled.div``;
 type IImage = {
-  height: number;
+  bg: string;
 };
 const Image = styled.div<IImage>`
   border-radius: 20px;
@@ -38,13 +38,11 @@ const Image = styled.div<IImage>`
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   overflow: hidden;
   position: relative;
-  img {
-    position: absolute;
-    width: 100%;
-    transition: transform 10s ease-in-out;
-    &:hover {
-      transform: translateY(-${(props) => props.height}%);
-    }
+  background: url(${(props) => props.bg}) top;
+  background-size: cover;
+  transition: background-position 10s ease-in-out;
+  &:hover {
+    background-position: bottom;
   }
 `;
 type IMywork = {
@@ -55,7 +53,6 @@ type IMywork = {
     skill: string[];
     github: string;
     right: boolean;
-    height: number;
   }[];
 };
 const Btn = styled.button`
@@ -73,9 +70,7 @@ const Mywork = ({ source }: IMywork) => {
     <>
       {source.map((item) => (
         <MyworkWrap key={item.h3}>
-          <Image style={{ order: item.right ? -1 : 0 }} height={item.height}>
-            <img src={item.img} />
-          </Image>
+          <Image style={{ order: item.right ? -1 : 0 }} bg={item.img}></Image>
           <Box className="textbox">
             <h3>{item.h3}</h3>
             <p>{item.p}</p>
