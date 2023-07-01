@@ -1,5 +1,20 @@
 import styled from "styled-components";
 
+const Image = styled.div<IImage>`
+  border-radius: 20px;
+  width: 55%;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  overflow: hidden;
+  position: relative;
+  background: url(${(props) => props.bg}) top;
+  background-size: cover;
+  transition: background-position 10s ease-in-out;
+  order: ${(props) => (props.right ? -1 : 0)};
+  &:hover {
+    background-position: bottom;
+  }
+`;
 const MyworkWrap = styled.div`
   margin: 50px 0;
   box-sizing: border-box;
@@ -11,9 +26,6 @@ const MyworkWrap = styled.div`
   justify-content: space-between;
   padding: 50px 50px;
   gap: 2rem;
-  @media (max-width: 1024px) {
-    width: 570px;
-  }
   .textbox {
     width: 40%;
     display: flex;
@@ -21,30 +33,36 @@ const MyworkWrap = styled.div`
     gap: 2rem;
     justify-content: center;
     order: -1;
+    h3 {
+      width: 100%;
+    }
     .skillbox {
       display: flex;
       gap: 0.8rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    width: 570px;
+  }
+  @media (max-width: 570px) {
+    width: 90%;
+    flex-flow: column;
+    padding: 50px 0;
+    .textbox {
+      width: 90%;
+    }
+    .webImage {
+      width: 90%;
+      order: -2;
     }
   }
 `;
 const Box = styled.div``;
 type IImage = {
   bg: string;
+  right: boolean;
 };
-const Image = styled.div<IImage>`
-  border-radius: 20px;
-  width: 55%;
-  height: 300px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  overflow: hidden;
-  position: relative;
-  background: url(${(props) => props.bg}) top;
-  background-size: cover;
-  transition: background-position 10s ease-in-out;
-  &:hover {
-    background-position: bottom;
-  }
-`;
+
 type IMywork = {
   source: {
     img: string;
@@ -70,7 +88,11 @@ const Mywork = ({ source }: IMywork) => {
     <>
       {source.map((item) => (
         <MyworkWrap key={item.h3}>
-          <Image style={{ order: item.right ? -1 : 0 }} bg={item.img}></Image>
+          <Image
+            className={"webImage"}
+            right={item.right}
+            bg={item.img}
+          ></Image>
           <Box className="textbox">
             <h3>{item.h3}</h3>
             <p>{item.p}</p>

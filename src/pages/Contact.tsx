@@ -20,7 +20,7 @@ const ContactContainer = styled.div`
     font-size: 24px;
     color: #147efb;
   }
-  ul {
+  .contact {
     width: 100%;
     display: flex;
     gap: 2rem;
@@ -31,8 +31,12 @@ const ContactContainer = styled.div`
     }
   }
   @media (max-width: 990px) {
-    width: 570px;
+    width: 100%;
     padding: 20px;
+  }
+  .contact {
+    display: flex;
+    flex-flow: column;
   }
 `;
 const Contact = () => {
@@ -40,7 +44,7 @@ const Contact = () => {
     <ContactContainer>
       <h4 className="Blue">CONTACT</h4>
       <h3>아래로 연락주세요!</h3>
-      <ul>
+      <ul className="contact">
         <li>
           <Circle>
             <HiOutlinePhone className="icon" />

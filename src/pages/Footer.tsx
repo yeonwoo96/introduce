@@ -4,7 +4,7 @@ import { ImArrowUp } from "react-icons/im";
 
 const FooterContainer = styled.div`
   padding: 3rem 0;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
 

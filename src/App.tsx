@@ -9,9 +9,15 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Container = styled.div`
+  width: calc(100vw - (100vw - 100%));
+  overflow: hidden;
   .container {
     box-sizing: border-box;
     padding: 0 40px;
+  }
+  .section {
+    width: 100vw;
+    overflow: hidden;
   }
 `;
 const HeaderWrapper = styled.nav`
@@ -26,7 +32,7 @@ const HeaderWrapper = styled.nav`
   padding: 0 40px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 200;
   h3 {
     font-size: 1.17em;
@@ -173,16 +179,16 @@ const App: React.FC = () => {
         </div>
         <RxHamburgerMenu className="hamburger" onClick={BurgerClick} />
       </HeaderWrapper>
-      <div ref={homeRef}>
+      <div className="section" ref={homeRef}>
         <Home />
       </div>
-      <div ref={aboutRef}>
+      <div className="section" ref={aboutRef}>
         <About />
       </div>
-      <div ref={projectsRef}>
+      <div className="section" ref={projectsRef}>
         <Projects />
       </div>
-      <div ref={contactRef}>
+      <div className="section" ref={contactRef}>
         <Contact />
       </div>
       <Footer />

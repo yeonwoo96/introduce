@@ -58,7 +58,6 @@ table {
    color: #767676;
    font-size: 14px;
    line-height: 1.5;
-   
  }
  h1{
  	font-size: 2.5rem;
