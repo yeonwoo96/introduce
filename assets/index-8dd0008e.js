@@ -101,10 +101,11 @@ Error generating stack: `+i.message+`
       margin-bottom: 1rem;
     }
     h3 {
-      margin-bottom: 2rem;
+      margin-bottom: 1.2rem;
     }
   }
   .left {
+    position: relative;
     border-radius: 40px;
     background: url("./assets/images/me.jpg");
     background-size: cover;
@@ -112,6 +113,12 @@ Error generating stack: `+i.message+`
     min-width: 300px;
     min-height: 350px;
     height: auto;
+    font-size: 64px;
+    span {
+      position: absolute;
+      bottom: -30px;
+      right: -30px;
+    }
   }
   @media (max-width: 990px) {
     flex-flow: column;
@@ -119,7 +126,12 @@ Error generating stack: `+i.message+`
       margin-bottom: 30px;
     }
   }
-`,K0=()=>y.jsx(Y0,{children:y.jsxs(G0,{children:[y.jsx("div",{className:"left"}),y.jsxs("div",{className:"right",children:[y.jsx("h4",{className:"Blue",children:"ABOUT ME"}),y.jsxs("div",{className:"educationwrap",children:[y.jsx("h3",{className:"Hilite",children:"Education"}),y.jsxs("ul",{className:"education",children:[y.jsxs("li",{children:["2022.02.01 - 2022.06.29",y.jsx("br",{}),"코리아 IT 아카데미 프론트엔드(개발자) 과정"," "]}),y.jsxs("li",{children:["2022.07.01 - 2022.12.01",y.jsx("br",{}),"독학 및 NomadCoder React JS 마스터 클래스 수강"]}),y.jsxs("li",{children:["2022.12.01 - 2023.05.31",y.jsx("br",{}),"제로베이스 프론트엔드 스쿨 10기 수료"," "]})]})]}),y.jsxs("div",{className:"Bookwrap",children:[y.jsx("h3",{className:"Hilite",children:"Book"}),y.jsxs("ul",{className:"book",children:[y.jsx("li",{children:"Do it! HTML+CSS+자바스크립트 웹 표준의 정석"}),y.jsx("li",{children:"리액트를 다루는 기술"})]})]})]})]})});function X0(e){return Gn({tag:"svg",attr:{role:"img",viewBox:"0 0 24 24"},child:[{tag:"title",attr:{},child:[]},{tag:"path",attr:{d:"M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"}}]})(e)}function Z0(e){return Gn({tag:"svg",attr:{role:"img",viewBox:"0 0 24 24"},child:[{tag:"title",attr:{},child:[]},{tag:"path",attr:{d:"M3 0C1.338 0 0 1.338 0 3v18c0 1.662 1.338 3 3 3h18c1.662 0 3-1.338 3-3V3c0-1.662-1.338-3-3-3H3Zm6.883 6.25c.63 0 1.005.3 1.125.9l1.463 8.303c.465-.615.846-1.133 1.146-1.553.465-.66.893-1.418 1.283-2.273.405-.855.608-1.62.608-2.295 0-.405-.113-.727-.338-.967-.21-.255-.608-.577-1.193-.967.6-.765 1.35-1.148 2.25-1.148.48 0 .878.143 1.193.428.33.285.494.704.494 1.26 0 .93-.39 2.093-1.17 3.488-.765 1.38-2.241 3.457-4.431 6.232l-2.227.156-1.711-9.628h-2.25V7.24c.6-.195 1.305-.406 2.115-.63.81-.24 1.358-.36 1.643-.36Z"}}]})(e)}const J0=hd`
+  .right {
+    .educationwrap {
+      margin-bottom: 24px;
+    }
+  }
+`,K0=()=>y.jsx(Y0,{children:y.jsxs(G0,{children:[y.jsx("div",{className:"left",children:y.jsx("span",{children:"😊"})}),y.jsxs("div",{className:"right",children:[y.jsx("h4",{className:"Blue",children:"ABOUT ME"}),y.jsxs("div",{className:"educationwrap",children:[y.jsx("h3",{className:"Hilite",children:"Education ✏️"}),y.jsxs("ul",{className:"education",children:[y.jsxs("li",{children:["2022.02.01 - 2022.06.29",y.jsx("br",{}),"🧑🏻‍💻 코리아 IT 아카데미 프론트엔드(개발자) 과정"," "]}),y.jsxs("li",{children:["2022.07.01 - 2022.12.01",y.jsx("br",{}),"👩🏼‍💻 독학 및 NomadCoder React JS 마스터 클래스 수강"]}),y.jsxs("li",{children:["2022.12.01 - 2023.05.31",y.jsx("br",{}),"🧑🏻‍💻 제로베이스 프론트엔드 스쿨 10기 수료"," "]})]})]}),y.jsxs("div",{className:"Bookwrap",children:[y.jsx("h3",{className:"Hilite",children:"Book 📚"}),y.jsxs("ul",{className:"book",children:[y.jsx("li",{children:"📕 Do it! HTML+CSS+자바스크립트 웹 표준의 정석"}),y.jsx("li",{children:"📘 리액트를 다루는 기술"})]})]})]})]})});function X0(e){return Gn({tag:"svg",attr:{role:"img",viewBox:"0 0 24 24"},child:[{tag:"title",attr:{},child:[]},{tag:"path",attr:{d:"M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"}}]})(e)}function Z0(e){return Gn({tag:"svg",attr:{role:"img",viewBox:"0 0 24 24"},child:[{tag:"title",attr:{},child:[]},{tag:"path",attr:{d:"M3 0C1.338 0 0 1.338 0 3v18c0 1.662 1.338 3 3 3h18c1.662 0 3-1.338 3-3V3c0-1.662-1.338-3-3-3H3Zm6.883 6.25c.63 0 1.005.3 1.125.9l1.463 8.303c.465-.615.846-1.133 1.146-1.553.465-.66.893-1.418 1.283-2.273.405-.855.608-1.62.608-2.295 0-.405-.113-.727-.338-.967-.21-.255-.608-.577-1.193-.967.6-.765 1.35-1.148 2.25-1.148.48 0 .878.143 1.193.428.33.285.494.704.494 1.26 0 .93-.39 2.093-1.17 3.488-.765 1.38-2.241 3.457-4.431 6.232l-2.227.156-1.711-9.628h-2.25V7.24c.6-.195 1.305-.406 2.115-.63.81-.24 1.358-.36 1.643-.36Z"}}]})(e)}const J0=hd`
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 }
@@ -147,6 +159,7 @@ Error generating stack: `+i.message+`
   rotate: 0deg;
 }
 `,b0=ge.div`
+  width: 100%;
   background: #f9f9f9;
   display: flex;
   justify-content: center;
@@ -265,7 +278,7 @@ Error generating stack: `+i.message+`
   position: relative;
   background: url(${e=>e.bg}) top;
   background-size: cover;
-  transition: background-position 10s ease-in-out;
+  transition: background-position ${e=>e.timer+"s"} ease-in-out;
   order: ${e=>e.right?-1:0};
   &:hover {
     background-position: bottom;
@@ -319,7 +332,7 @@ Error generating stack: `+i.message+`
   font-size: 1rem;
   font-weight: 500;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-`,um=({source:e})=>(console.log(e),y.jsx(y.Fragment,{children:e.map(t=>y.jsxs(lm,{children:[y.jsx(rm,{className:"webImage",right:t.right,bg:t.img}),y.jsxs(im,{className:"textbox",children:[y.jsx("h3",{children:t.h3}),y.jsx("p",{children:t.p}),y.jsx("div",{className:"skillbox",children:t.skill.map(n=>y.jsx(om,{children:n}))}),y.jsx("a",{href:t.github,children:"github"})]})]},t.h3))})),sm=ge.div`
+`,um=({source:e})=>(console.log(e),y.jsx(y.Fragment,{children:e.map(t=>y.jsxs(lm,{children:[y.jsx(rm,{className:"webImage",right:t.right,bg:t.img,timer:t.timer}),y.jsxs(im,{className:"textbox",children:[y.jsx("h3",{children:t.h3}),y.jsx("p",{children:t.p}),y.jsx("div",{className:"skillbox",children:t.skill.map(n=>y.jsx(om,{children:n}))}),y.jsx("a",{href:t.github,children:"github"})]})]},t.h3))})),sm=ge.div`
   width: 100vw;
   display: flex;
   flex-flow: column;
@@ -335,10 +348,10 @@ Error generating stack: `+i.message+`
     text-align: center;
   }
   h3 {
-    width: 30rem;
+    width: 29rem;
     text-align: center;
   }
-`,am=[{img:"./assets/images/nikeclone.png",h3:"나이키 온라인 스토어 🏃‍♂️",p:"나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",skill:["React","TypeScript"],github:"string",right:!1},{img:"./assets/images/ReactFakeShop.png",h3:"나이키 온라인 스토어 🏃‍♂️",p:"나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",skill:["React","TypeScript"],github:"string",right:!0},{img:"./assets/images/nikeclone.png",h3:"나이키 온라인 스토어 🏃‍♂️",p:"나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",skill:["React","TypeScript"],github:"string",right:!1}],cm=()=>y.jsxs(sm,{children:[y.jsx("h4",{className:"Blue",children:"PORTFOLIO"}),y.jsx("h3",{children:"Each project is a unique piece of development 🧩"}),y.jsx(um,{source:am})]});function La(e){return Gn({tag:"svg",attr:{fill:"none",viewBox:"0 0 24 24",strokeWidth:"2",stroke:"currentColor","aria-hidden":"true"},child:[{tag:"path",attr:{strokeLinecap:"round",strokeLinejoin:"round",d:"M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"}}]})(e)}const fm=ge.div`
+`,am=[{img:"./assets/images/nikeclone.png",h3:"나이키 온라인 스토어 🏃‍♂️",p:"나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",skill:["React","TypeScript"],timer:10,github:"string",right:!1},{img:"./assets/images/ReactFakeShop.png",h3:"리액트 페이크 샵 👔",p:"가상 의류 쇼핑몰을 구현 하였습니다. 타입스크립와 리코일이 사용되었고. 상품 리스트와 상세페이지를 구현하고.다크 모드와 화이트 모드 기능을 추가 하였습니다.",skill:["React","TypeScript"],timer:3,github:"string",right:!0},{img:"./assets/images/nikeclone.png",h3:"부산 광역시 홈페이지 🌊",p:"나이키 공식 온라인 스토어를 클론 코딩 하였습니다. 리액트와 타입스크립트를 사용하고 상태 관리 라이브 러리론 리코일을 이용하였습니다.",skill:["React","TypeScript"],timer:10,github:"string",right:!1}],cm=()=>y.jsxs(sm,{children:[y.jsx("h4",{className:"Blue",children:"PORTFOLIO"}),y.jsx("h3",{children:"사진의 마우스를 올리시면 페이지 전체를 보실 수 있습니다 😊 "}),y.jsx(um,{source:am})]});function La(e){return Gn({tag:"svg",attr:{fill:"none",viewBox:"0 0 24 24",strokeWidth:"2",stroke:"currentColor","aria-hidden":"true"},child:[{tag:"path",attr:{strokeLinecap:"round",strokeLinejoin:"round",d:"M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"}}]})(e)}const fm=ge.div`
   padding: 110px 0;
   width: 950px;
   display: flex;
@@ -375,6 +388,8 @@ Error generating stack: `+i.message+`
     flex-flow: column;
   }
 `,dm=()=>y.jsxs(fm,{children:[y.jsx("h4",{className:"Blue",children:"CONTACT"}),y.jsx("h3",{children:"아래로 연락주세요!"}),y.jsxs("ul",{className:"contact",children:[y.jsxs("li",{children:[y.jsx(ou,{children:y.jsx(La,{className:"icon"})}),y.jsx("span",{className:"Hilite",children:"HP:"}),"010 5314 3899"]}),y.jsxs("li",{children:[y.jsx(ou,{children:y.jsx(La,{className:"icon"})}),y.jsx("span",{className:"Hilite",children:"Mail:"}),"tlsxkrqhd@naver.com"]})]})]});function pm(e){return Gn({tag:"svg",attr:{viewBox:"0 0 15 15",fill:"none"},child:[{tag:"path",attr:{fillRule:"evenodd",clipRule:"evenodd",d:"M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z",fill:"currentColor"}}]})(e)}function hm(e){return Gn({tag:"svg",attr:{viewBox:"0 0 1024 1024"},child:[{tag:"path",attr:{d:"M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"}}]})(e)}const mm=ge.div`
+  width: calc(100vw - (100vw - 100%));
+  overflow: hidden;
   .container {
     box-sizing: border-box;
     padding: 0 40px;
@@ -384,6 +399,9 @@ Error generating stack: `+i.message+`
     overflow: hidden;
   }
 `,vm=ge.nav`
+  .logo {
+    font-size: 20px;
+  }
   height: 80px;
   background-color: #fff;
   box-sizing: border-box;
@@ -405,6 +423,13 @@ Error generating stack: `+i.message+`
     gap: 2rem;
     @media (max-width: 900px) {
       display: none;
+    }
+    p {
+      cursor: pointer;
+      font-weight: 700;
+      &:hover {
+        color: #147efb;
+      }
     }
   }
   .hamburger,
@@ -447,15 +472,16 @@ Error generating stack: `+i.message+`
     padding-bottom: 180px;
     p {
       color: #000;
-      font-weight: 500;
+      font-weight: 700;
       font-size: 1.5rem;
+      cursor: pointer;
       &:hover {
         color: #147efb;
         transition: all 0.3s;
       }
     }
   }
-`,oo=ge.div``,ym=()=>{const e=Oe.useRef(null),t=Oe.useRef(null),n=Oe.useRef(null),r=Oe.useRef(null),l=s=>{s.current&&window.scrollTo({top:s.current.offsetTop,behavior:"smooth"})},[i,o]=Oe.useState(!1),u=()=>o(s=>!s);return y.jsxs(mm,{children:[y.jsxs(vm,{children:[y.jsx(gm,{on:i,children:y.jsxs(oo,{children:[y.jsx(oo,{className:"Xbox",children:y.jsx(hm,{className:"close",onClick:u})}),y.jsxs(oo,{className:"Menubox",children:[y.jsx("p",{onClick:()=>{window.scrollTo({top:0,behavior:"smooth"}),u()},children:"Home"}),y.jsx("p",{onClick:()=>{u(),l(t)},children:"About"}),y.jsx("p",{onClick:()=>{u(),l(n)},children:"Projects"}),y.jsx("p",{onClick:()=>{u(),l(r)},children:"Contacts"})]})]})}),y.jsx("h3",{className:"Hilite",children:"Yeon.dev"}),y.jsxs("div",{className:"menu Hilite",children:[y.jsx("p",{onClick:()=>window.scrollTo({top:0,behavior:"smooth"}),children:"Home"}),y.jsx("p",{onClick:()=>l(t),children:"About"}),y.jsx("p",{onClick:()=>l(n),children:"Projects"}),y.jsx("p",{onClick:()=>l(r),children:"Contacts"})]}),y.jsx(pm,{className:"hamburger",onClick:u})]}),y.jsx("div",{className:"section",ref:e,children:y.jsx(nm,{})}),y.jsx("div",{className:"section",ref:t,children:y.jsx(K0,{})}),y.jsx("div",{className:"section",ref:n,children:y.jsx(cm,{})}),y.jsx("div",{className:"section",ref:r,children:y.jsx(dm,{})}),y.jsx(Q0,{})]})},wm=F0`
+`,oo=ge.div``,ym=()=>{const e=Oe.useRef(null),t=Oe.useRef(null),n=Oe.useRef(null),r=Oe.useRef(null),l=s=>{s.current&&window.scrollTo({top:s.current.offsetTop,behavior:"smooth"})},[i,o]=Oe.useState(!1),u=()=>o(s=>!s);return y.jsxs(mm,{children:[y.jsxs(vm,{children:[y.jsx(gm,{on:i,children:y.jsxs(oo,{children:[y.jsx(oo,{className:"Xbox",children:y.jsx(hm,{className:"close",onClick:u})}),y.jsxs(oo,{className:"Menubox",children:[y.jsx("p",{onClick:()=>{window.scrollTo({top:0,behavior:"smooth"}),u()},children:"Home"}),y.jsx("p",{onClick:()=>{u(),l(t)},children:"About"}),y.jsx("p",{onClick:()=>{u(),l(n)},children:"Projects"}),y.jsx("p",{onClick:()=>{u(),l(r)},children:"Contacts"})]})]})}),y.jsx("h3",{className:"Hilite logo",children:"Yeon.dev"}),y.jsxs("div",{className:"menu Hilite",children:[y.jsx("p",{onClick:()=>window.scrollTo({top:0,behavior:"smooth"}),children:"Home"}),y.jsx("p",{onClick:()=>l(t),children:"About"}),y.jsx("p",{onClick:()=>l(n),children:"Projects"}),y.jsx("p",{onClick:()=>l(r),children:"Contacts"})]}),y.jsx(pm,{className:"hamburger",onClick:u})]}),y.jsx("div",{className:"section",ref:e,children:y.jsx(nm,{})}),y.jsx("div",{className:"section",ref:t,children:y.jsx(K0,{})}),y.jsx("div",{className:"section",ref:n,children:y.jsx(cm,{})}),y.jsx("div",{className:"section",ref:r,children:y.jsx(dm,{})}),y.jsx(Q0,{})]})},wm=F0`
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 html, body, div, span, applet, object, iframe,
