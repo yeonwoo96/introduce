@@ -21,6 +21,9 @@ const Container = styled.div`
   }
 `;
 const HeaderWrapper = styled.nav`
+  .logo {
+    font-size: 20px;
+  }
   height: 80px;
   background-color: #fff;
   box-sizing: border-box;
@@ -42,6 +45,13 @@ const HeaderWrapper = styled.nav`
     gap: 2rem;
     @media (max-width: 900px) {
       display: none;
+    }
+    p {
+      cursor: pointer;
+      font-weight: 700;
+      &:hover {
+        color: #147efb;
+      }
     }
   }
   .hamburger,
@@ -88,8 +98,9 @@ const BurgerPage = styled.div<IBurgerPage>`
     padding-bottom: 180px;
     p {
       color: #000;
-      font-weight: 500;
+      font-weight: 700;
       font-size: 1.5rem;
+      cursor: pointer;
       &:hover {
         color: #147efb;
         transition: all 0.3s;
@@ -161,7 +172,7 @@ const App: React.FC = () => {
             </Box>
           </Box>
         </BurgerPage>
-        <h3 className="Hilite">Yeon.dev</h3>
+        <h3 className="Hilite logo">Yeon.dev</h3>
         <div className="menu Hilite">
           <p
             onClick={() =>
@@ -179,6 +190,7 @@ const App: React.FC = () => {
         </div>
         <RxHamburgerMenu className="hamburger" onClick={BurgerClick} />
       </HeaderWrapper>
+      {/* 헤더 구현 */}
       <div className="section" ref={homeRef}>
         <Home />
       </div>

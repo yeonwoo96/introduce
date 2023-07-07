@@ -25,6 +25,7 @@ const AboutWrap = styled.div`
     }
   }
   .left {
+    position: relative;
     border-radius: 40px;
     background: url("./assets/images/me.jpg");
     background-size: cover;
@@ -32,6 +33,12 @@ const AboutWrap = styled.div`
     min-width: 300px;
     min-height: 350px;
     height: auto;
+    font-size: 64px;
+    span {
+      position: absolute;
+      bottom: -30px;
+      right: -30px;
+    }
   }
   @media (max-width: 990px) {
     flex-flow: column;
@@ -49,7 +56,9 @@ const About = () => {
   return (
     <AboutContainer>
       <AboutWrap>
-        <div className="left"></div>
+        <div className="left">
+          <span>😊</span>
+        </div>
         <div className="right">
           <h4 className="Blue">ABOUT ME</h4>
           <div className="educationwrap">

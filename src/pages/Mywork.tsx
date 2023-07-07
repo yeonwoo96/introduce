@@ -9,7 +9,7 @@ const Image = styled.div<IImage>`
   position: relative;
   background: url(${(props) => props.bg}) top;
   background-size: cover;
-  transition: background-position 10s ease-in-out;
+  transition: background-position ${(props) => props.timer + "s"} ease-in-out;
   order: ${(props) => (props.right ? -1 : 0)};
   &:hover {
     background-position: bottom;
@@ -61,6 +61,7 @@ const Box = styled.div``;
 type IImage = {
   bg: string;
   right: boolean;
+  timer: number;
 };
 
 type IMywork = {
@@ -71,6 +72,7 @@ type IMywork = {
     skill: string[];
     github: string;
     right: boolean;
+    timer: number;
   }[];
 };
 const Btn = styled.button`
@@ -92,6 +94,7 @@ const Mywork = ({ source }: IMywork) => {
             className={"webImage"}
             right={item.right}
             bg={item.img}
+            timer={item.timer}
           ></Image>
           <Box className="textbox">
             <h3>{item.h3}</h3>
