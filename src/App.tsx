@@ -1,6 +1,6 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Footer from "./pages/Footer";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -125,8 +125,40 @@ const App: React.FC = () => {
   };
   const [HamburgerIsOn, setHamburgerIsOn] = useState(false);
   const BurgerClick = () => setHamburgerIsOn((cur) => !cur);
+  const LoadingPageAni = keyframes`
+    0%{
+      opacity: 1;
+    }
+    100%{
+      display: none;
+      opacity: 0;
+    }
+  `;
+  const LoadingPage = styled.div`
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    color: #147efb;
+    font-weight: 700;
+    font-size: 70px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    animation: ${LoadingPageAni} 5s;
+    animation-fill-mode: forwards;
+    display: none;
+  `;
+
   return (
     <Container>
+      <LoadingPage>
+        <span>식사들 하셨습니까?</span>
+        <span>밥 값 하는 놈</span>
+      </LoadingPage>
       <HeaderWrapper>
         <BurgerPage on={HamburgerIsOn}>
           <Box>
