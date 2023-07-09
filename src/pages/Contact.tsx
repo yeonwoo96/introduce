@@ -10,6 +10,11 @@ const ContactContainer = styled.div`
   flex-flow: column;
   margin: auto;
   box-sizing: border-box;
+  font-size: 16px;
+  .Hilite {
+    font-weight: 700;
+    font-size: 1rem;
+  }
   h4 {
     margin-bottom: 1rem;
   }
@@ -49,13 +54,13 @@ const Contact = () => {
           <Circle>
             <HiOutlinePhone className="icon" />
           </Circle>
-          <span className="Hilite">HP:</span>010 5314 3899
+          <span className="Hilite">HP :</span>010 5314 3899
         </li>
         <li>
           <Circle>
             <HiOutlinePhone className="icon" />
           </Circle>
-          <span className="Hilite">Mail:</span>tlsxkrqhd@naver.com
+          <span className="Hilite">Mail :</span>tlsxkrqhd@naver.com
         </li>
       </ul>
     </ContactContainer>

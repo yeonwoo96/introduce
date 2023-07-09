@@ -34,7 +34,14 @@ const AboutWrap = styled.div`
     min-height: 350px;
     height: auto;
     font-size: 64px;
+
     span {
+      background: #fff;
+      border-radius: 50%;
+      padding: 10px;
+      font-size: 54px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      display: flex;
       position: absolute;
       bottom: -30px;
       right: -30px;
@@ -57,7 +64,7 @@ const About = () => {
     <AboutContainer>
       <AboutWrap>
         <div className="left">
-          <span>😊</span>
+          <span>🍰</span>
         </div>
         <div className="right">
           <h4 className="Blue">ABOUT ME</h4>

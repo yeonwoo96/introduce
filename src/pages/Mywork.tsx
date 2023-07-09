@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { FaGithub, FaRegPaperPlane } from "react-icons/fa6";
 const Image = styled.div<IImage>`
   border-radius: 20px;
   width: 55%;
@@ -32,14 +32,22 @@ const MyworkWrap = styled.div`
     flex-flow: column;
     gap: 2rem;
     justify-content: center;
+    align-items: center;
     order: -1;
     h3 {
       width: 100%;
+    }
+    p {
+      text-align: center;
     }
     .skillbox {
       display: flex;
       gap: 0.8rem;
     }
+  }
+  .linkbox {
+    display: flex;
+    gap: 2rem;
   }
   @media (max-width: 1024px) {
     width: 570px;
@@ -73,19 +81,39 @@ type IMywork = {
     github: string;
     right: boolean;
     timer: number;
+    url: string;
   }[];
 };
 const Btn = styled.button`
   border: none;
-  color: #111;
+  color: #181818;
+  font-weight: 500;
   padding: 5px 10px;
   background: #fff;
   font-size: 1rem;
-  font-weight: 500;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+`;
+const LinkBtn = styled.span`
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  color: #181818;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  cursor: pointer;
+  &:hover {
+    background: #181818;
+    color: #fff;
+  }
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
 `;
 const Mywork = ({ source }: IMywork) => {
   console.log(source);
+
   return (
     <>
       {source.map((item) => (
@@ -104,7 +132,14 @@ const Mywork = ({ source }: IMywork) => {
                 <Btn>{skill}</Btn>
               ))}
             </div>
-            <a href={item.github}>github</a>
+            <div className="linkbox">
+              <LinkBtn onClick={() => window.open(item.github)}>
+                Code <FaGithub className="icon" />
+              </LinkBtn>
+              <LinkBtn onClick={() => window.open(item.url)}>
+                Visit Site <FaRegPaperPlane className="icon" />
+              </LinkBtn>
+            </div>
           </Box>
         </MyworkWrap>
       ))}
